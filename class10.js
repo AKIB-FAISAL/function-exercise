@@ -38,9 +38,11 @@ while (a <= 5) {
 console.log("Sum from 1 to 5 is: " + sum);
 //pblm 5 :Given an array ["apple", "banana", "cherry"], use forEach to print each fruit .
 const fruits = ["apple", "banana", "cherry"];
-for (let b = 0; b < fruits.length; b++) {
-  console.log(fruits[b]);
-}
+
+fruits.forEach(function(fruit) {
+  console.log(fruit);
+});
+
 //3. Functions + Arrays + Objects
 /*pblm 6:Create a function countPassFail(scores) that takes an array of numbers.Count how many scores are >= 60 (pass), 
 Count how many scores are < 60 (fail), Return an object like: { pass: 3, fail: 2 }*/
